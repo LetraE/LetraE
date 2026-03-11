@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Primary -->
+  <title>LetraE | Mejora tu certificado energético antes de 2030</title>
+  <meta name="description" content="Desde 2030, no podrás vender ni alquilar tu vivienda sin certificado energético mínimo E. Te ayudamos a conseguirlo: auditoría, asesoramiento y gestión de obras." />
+  <meta name="keywords" content="certificado energético letra E, mejorar eficiencia energética vivienda, normativa 2030 eficiencia energética, cómo vender piso 2030, auditoría energética, rehabilitación energética, directiva europea edificios" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.letrae.es/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="LetraE — Prepara tu vivienda para la normativa 2030" />
+  <meta property="og:description" content="Sin letra E, no podrás vender ni alquilar tu piso. Te ayudamos a llegar a tiempo con auditoría, asesoramiento y gestión completa de obras." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.letrae.es/" />
+
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "LetraE",
+    "description": "Servicio de asesoramiento y gestión para mejorar la eficiencia energética de viviendas y edificios en España antes de la normativa 2030.",
+    "url": "https://www.letrae.es",
+    "serviceType": ["Auditoría energética", "Asesoramiento en eficiencia energética", "Gestión de rehabilitación de edificios"],
+    "areaServed": "España",
+    "potentialAction": {
+      "@type": "ReserveAction",
+      "target": "https://www.letrae.es/#contacto"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream: #F5F0E8;
+      --ink: #1A1A18;
+      --sage: #5C7A5F;
+      --sage-light: #8AAD8D;
+      --amber: #D4830A;
+      --amber-light: #F5A623;
+      --stone: #8A8578;
+      --card-bg: #FDFAF4;
+      --border: #E2DAC8;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.2rem 5vw;
+      background: rgba(245,240,232,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.6rem;
+      color: var(--ink);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+    .logo span { color: var(--sage); }
+    nav ul { list-style: none; display: flex; gap: 2rem; }
+    nav ul a {
+      text-decoration: none; color: var(--ink); font-size: 0.85rem;
+      font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase;
+      opacity: 0.7; transition: opacity 0.2s;
+    }
+    nav ul a:hover { opacity: 1; }
+    .nav-cta {
+      background: var(--sage); color: white !important; opacity: 1 !important;
+      padding: 0.5rem 1.2rem; border-radius: 2px;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: grid; grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 8rem 5vw 5rem;
+      gap: 4rem;
+      position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; top: 0; right: 0;
+      width: 55%; height: 100%;
+      background: linear-gradient(135deg, #EAF0EA 0%, #D9E8DA 100%);
+      z-index: 0;
+    }
+    .hero-text { position: relative; z-index: 1; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--amber); color: white;
+      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0.4rem 0.9rem; border-radius: 2px;
+      margin-bottom: 1.5rem;
+      animation: fadeUp 0.6s ease both;
+    }
+    .hero-badge::before { content: '●'; font-size: 0.5rem; }
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.8rem, 5vw, 4.2rem);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.5rem;
+      animation: fadeUp 0.6s 0.1s ease both;
+    }
+    h1 em { font-style: italic; color: var(--sage); }
+    .hero-sub {
+      font-size: 1.1rem; color: var(--stone);
+      max-width: 480px; margin-bottom: 2.5rem;
+      animation: fadeUp 0.6s 0.2s ease both;
+    }
+    .hero-actions {
+      display: flex; gap: 1rem; flex-wrap: wrap;
+      animation: fadeUp 0.6s 0.3s ease both;
+    }
+    .btn-primary {
+      background: var(--sage); color: white;
+      padding: 0.9rem 2rem; border: none; border-radius: 2px;
+      font-family: 'DM Sans', sans-serif; font-size: 0.9rem; font-weight: 500;
+      cursor: pointer; text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+      letter-spacing: 0.02em;
+    }
+    .btn-primary:hover { background: #4a6a4d; transform: translateY(-1px); }
+    .btn-secondary {
+      background: transparent; color: var(--ink);
+      padding: 0.9rem 2rem; border: 1.5px solid var(--ink); border-radius: 2px;
+      font-family: 'DM Sans', sans-serif; font-size: 0.9rem; font-weight: 500;
+      cursor: pointer; text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-secondary:hover { background: var(--ink); color: var(--cream); }
+
+    /* Countdown */
+    .hero-visual {
+      position: relative; z-index: 1;
+      display: flex; flex-direction: column; align-items: center; gap: 1.8rem;
+      animation: fadeIn 0.8s 0.4s ease both;
+    }
+    .countdown-card {
+      background: white; border: 1px solid var(--border);
+      border-radius: 4px; padding: 2.5rem 3rem; text-align: center;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+      width: 100%; max-width: 480px;
+    }
+    .countdown-label {
+      font-size: 0.85rem; font-weight: 500; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--stone); margin-bottom: 1.2rem;
+    }
+    .countdown-numbers {
+      display: flex; gap: 1.2rem; justify-content: center; margin-bottom: 1rem;
+    }
+    .count-unit { text-align: center; }
+    .count-val {
+      font-family: 'DM Serif Display', serif;
+      font-size: 4rem; line-height: 1; color: var(--sage);
+      display: block;
+    }
+    .count-name { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--stone); }
+    .count-sep { font-family: 'DM Serif Display', serif; font-size: 3.6rem; color: var(--border); align-self: flex-start; padding-top: 2px; }
+    .countdown-footnote { font-size: 0.88rem; color: var(--stone); margin-top: 0.4rem; }
+
+    .rating-scale {
+      background: white; border: 1px solid var(--border); border-radius: 4px;
+      padding: 1.8rem 2rem; width: 100%; max-width: 480px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    }
+    .rating-scale-label { font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--stone); margin-bottom: 1rem; }
+    .rating-bars { display: flex; flex-direction: column; gap: 0.55rem; }
+    .rating-row { display: flex; align-items: center; gap: 0.6rem; }
+    .rating-letter {
+      width: 2.2rem; height: 2.2rem; border-radius: 2px;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 600; font-size: 1rem; color: white; flex-shrink: 0;
+    }
+    .rating-bar { height: 14px; border-radius: 2px; flex: 1; opacity: 0.3; transition: opacity 0.3s; }
+    .rating-note { font-size: 0.78rem; color: var(--stone); white-space: nowrap; }
+    .rating-row.highlight .rating-bar { opacity: 1; }
+    .rating-row.highlight .rating-letter { box-shadow: 0 0 0 2px white, 0 0 0 3px currentColor; }
+    .rating-row.faded { opacity: 0.35; }
+
+    /* ── URGENCY BAR ── */
+    .urgency-bar {
+      background: var(--ink); color: var(--cream);
+      padding: 1rem 5vw;
+      display: flex; align-items: center; justify-content: center; gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .urgency-bar p { font-size: 0.85rem; }
+    .urgency-bar strong { color: var(--amber-light); }
+
+    /* ── SECTIONS ── */
+    section { padding: 6rem 5vw; }
+    .section-label {
+      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--sage);
+      margin-bottom: 0.8rem;
+    }
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      line-height: 1.15; letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+    .section-intro { font-size: 1.05rem; color: var(--stone); max-width: 540px; margin-bottom: 3rem; }
+
+    /* ── PROBLEMA ── */
+    .problema { background: var(--ink); color: var(--cream); }
+    .problema .section-label { color: var(--amber-light); }
+    .problema h2 { color: var(--cream); }
+    .problema .section-intro { color: rgba(245,240,232,0.65); }
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5px; background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 4px; overflow: hidden;
+    }
+    .stat-card {
+      background: var(--ink); padding: 2rem 1.5rem;
+    }
+    .stat-num {
+      font-family: 'DM Serif Display', serif;
+      font-size: 3rem; color: var(--amber-light);
+      line-height: 1; margin-bottom: 0.5rem;
+    }
+    .stat-desc { font-size: 0.88rem; color: rgba(245,240,232,0.65); line-height: 1.5; }
+
+    /* ── SERVICIOS ── */
+    .servicios-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .servicio-card {
+      background: var(--card-bg); border: 1px solid var(--border); border-radius: 4px;
+      padding: 2rem; transition: transform 0.2s, box-shadow 0.2s;
+      position: relative; overflow: hidden;
+    }
+    .servicio-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,0.08); }
+    .servicio-num {
+      font-family: 'DM Serif Display', serif; font-size: 3.5rem;
+      color: var(--border); line-height: 1; margin-bottom: 1rem;
+      position: absolute; top: 1.2rem; right: 1.5rem;
+    }
+    .servicio-icon {
+      width: 2.5rem; height: 2.5rem; background: var(--sage);
+      border-radius: 2px; margin-bottom: 1rem;
+      display: flex; align-items: center; justify-content: center;
+      color: white; font-size: 1.1rem;
+    }
+    .servicio-card h3 {
+      font-family: 'DM Serif Display', serif; font-size: 1.3rem;
+      margin-bottom: 0.6rem;
+    }
+    .servicio-card p { font-size: 0.88rem; color: var(--stone); line-height: 1.65; }
+    .servicio-tag {
+      display: inline-block; margin-top: 1rem;
+      font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--sage); font-weight: 500;
+      border-bottom: 1px solid var(--sage); padding-bottom: 1px;
+    }
+
+    /* ── PARA QUIÉN ── */
+    .para-quien { background: #EEEAE0; }
+    .perfiles-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+    .perfil-card {
+      background: white; border-radius: 4px; padding: 1.8rem;
+      border: 1px solid var(--border);
+    }
+    .perfil-emoji { font-size: 2rem; margin-bottom: 0.8rem; }
+    .perfil-card h3 { font-family: 'DM Serif Display', serif; font-size: 1.15rem; margin-bottom: 0.5rem; }
+    .perfil-card p { font-size: 0.85rem; color: var(--stone); }
+
+    /* ── PROCESO ── */
+    .proceso-steps {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0; position: relative;
+    }
+    .step {
+      padding: 2rem 1.5rem; border-right: 1px solid var(--border);
+      position: relative;
+    }
+    .step:last-child { border-right: none; }
+    .step-num {
+      font-family: 'DM Serif Display', serif; font-size: 4rem;
+      color: var(--border); line-height: 1; margin-bottom: 1rem;
+    }
+    .step h3 { font-family: 'DM Serif Display', serif; font-size: 1.1rem; margin-bottom: 0.5rem; }
+    .step p { font-size: 0.83rem; color: var(--stone); }
+    .step-arrow {
+      position: absolute; right: -12px; top: 50%;
+      width: 24px; height: 24px; background: var(--sage);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      color: white; font-size: 0.7rem; z-index: 1; transform: translateY(-50%);
+    }
+    .step:last-child .step-arrow { display: none; }
+
+    /* ── FAQ / SEO ── */
+    .faq { background: var(--card-bg); }
+    .faq-list { max-width: 720px; }
+    .faq-item { border-bottom: 1px solid var(--border); padding: 1.5rem 0; }
+    .faq-q {
+      font-family: 'DM Serif Display', serif; font-size: 1.1rem;
+      cursor: pointer; display: flex; justify-content: space-between; align-items: center;
+      gap: 1rem;
+    }
+    .faq-q::after { content: '+'; font-size: 1.3rem; color: var(--sage); flex-shrink: 0; }
+    .faq-q.open::after { content: '−'; }
+    .faq-a { font-size: 0.88rem; color: var(--stone); margin-top: 0.8rem; line-height: 1.7; display: none; }
+    .faq-a.open { display: block; }
+
+    /* ── CONTACTO ── */
+    .contacto { background: var(--sage); color: white; }
+    .contacto .section-label { color: rgba(255,255,255,0.6); }
+    .contacto h2 { color: white; }
+    .contacto .section-intro { color: rgba(255,255,255,0.75); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+    .contact-form { display: flex; flex-direction: column; gap: 1rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+    label { font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(255,255,255,0.7); }
+    input, select, textarea {
+      background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 2px; padding: 0.75rem 1rem;
+      font-family: 'DM Sans', sans-serif; font-size: 0.9rem; color: white;
+      outline: none; transition: border-color 0.2s;
+    }
+    input::placeholder, textarea::placeholder { color: rgba(255,255,255,0.4); }
+    input:focus, select:focus, textarea:focus { border-color: rgba(255,255,255,0.7); }
+    select option { background: var(--sage); color: white; }
+    textarea { resize: vertical; min-height: 100px; }
+    .btn-submit {
+      background: white; color: var(--sage);
+      border: none; padding: 0.9rem 2rem; border-radius: 2px;
+      font-family: 'DM Sans', sans-serif; font-size: 0.9rem; font-weight: 500;
+      cursor: pointer; transition: all 0.2s; letter-spacing: 0.02em;
+      align-self: flex-start;
+    }
+    .btn-submit:hover { background: var(--cream); transform: translateY(-1px); }
+    .contact-info { display: flex; flex-direction: column; gap: 1.5rem; padding-top: 0.5rem; }
+    .contact-info-item { display: flex; gap: 1rem; align-items: flex-start; }
+    .contact-info-icon {
+      width: 2.2rem; height: 2.2rem; background: rgba(255,255,255,0.15);
+      border-radius: 2px; display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; font-size: 1rem;
+    }
+    .contact-info-text strong { display: block; font-size: 0.85rem; margin-bottom: 0.2rem; }
+    .contact-info-text span { font-size: 0.82rem; color: rgba(255,255,255,0.65); }
+    .promise-box {
+      background: rgba(255,255,255,0.1); border-radius: 4px; padding: 1.5rem;
+      border: 1px solid rgba(255,255,255,0.2); margin-top: 1rem;
+    }
+    .promise-box p { font-size: 0.85rem; color: rgba(255,255,255,0.8); line-height: 1.65; }
+
+    /* ── PRIVACY / CHECKBOX ── */
+    .privacy-notice {
+      background: rgba(0,0,0,0.15); border-radius: 3px; padding: 1rem 1.2rem;
+      border-left: 3px solid rgba(255,255,255,0.3);
+    }
+    .privacy-notice p { font-size: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.6; }
+    .checkbox-label {
+      display: flex; align-items: flex-start; gap: 0.7rem;
+      cursor: pointer; margin-top: 0.5rem;
+    }
+    .checkbox-label input[type="checkbox"] {
+      width: 1.1rem; height: 1.1rem; flex-shrink: 0; margin-top: 0.15rem;
+      accent-color: white; cursor: pointer; padding: 0;
+      background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.4);
+    }
+    .checkbox-label span { font-size: 0.8rem; color: rgba(255,255,255,0.8); line-height: 1.5; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--ink); color: rgba(245,240,232,0.5);
+      padding: 2rem 5vw; display: flex;
+      justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
+    }
+    footer .logo { color: rgba(245,240,232,0.8); }
+    footer p { font-size: 0.78rem; }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 6rem; }
+      .hero::before { display: none; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .proceso-steps { grid-template-columns: 1fr; }
+      .step { border-right: none; border-bottom: 1px solid var(--border); }
+      .step-arrow { display: none !important; }
+      nav ul { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="logo">Letra<span>E</span></a>
+  <ul>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#proceso">Cómo funciona</a></li>
+    <li><a href="#tarifas">Tarifas</a></li>
+    <li><a href="#faq">Preguntas</a></li>
+    <li><a href="#contacto" class="nav-cta">Consulta gratis</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" aria-label="Cabecera principal">
+  <div class="hero-text">
+    <div class="hero-badge">Normativa 2030 · Directiva UE 2024/1275</div>
+    <h1>Tu vivienda <em>necesita</em> la letra E para venderse o alquilarse</h1>
+    <p class="hero-sub">Desde enero de 2030, la ley europea obliga a que toda vivienda en venta o alquiler tenga certificado energético mínimo <strong>E</strong>. El 80% de los pisos en España no lo cumplen. Te ayudamos a llegar a tiempo.</p>
+    <div class="hero-actions">
+      <a href="#contacto" class="btn-primary">Consulta gratuita →</a>
+      <a href="#servicios" class="btn-secondary">Ver servicios</a>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="countdown-card">
+      <div class="countdown-label">Tiempo hasta la normativa 2030</div>
+      <div class="countdown-numbers" id="countdown">
+        <div class="count-unit"><span class="count-val" id="cd-days">—</span><span class="count-name">días</span></div>
+        <div class="count-sep">:</div>
+        <div class="count-unit"><span class="count-val" id="cd-hours">—</span><span class="count-name">horas</span></div>
+        <div class="count-sep">:</div>
+        <div class="count-unit"><span class="count-val" id="cd-mins">—</span><span class="count-name">min</span></div>
+        <div class="count-sep">:</div>
+        <div class="count-unit"><span class="count-val" id="cd-secs">—</span><span class="count-name">seg</span></div>
+      </div>
+      <div class="countdown-footnote">Entrada en vigor: 1 enero 2030</div>
+    </div>
+
+    <div class="rating-scale">
+      <div class="rating-scale-label">Escala de eficiencia energética</div>
+      <div class="rating-bars">
+        <div class="rating-row faded">
+          <div class="rating-letter" style="background:#1A9941">A</div>
+          <div class="rating-bar" style="background:#1A9941; width:100%"></div>
+          <div class="rating-note">Máxima eficiencia</div>
+        </div>
+        <div class="rating-row faded">
+          <div class="rating-letter" style="background:#52B747">B</div>
+          <div class="rating-bar" style="background:#52B747; width:80%"></div>
+          <div class="rating-note"></div>
+        </div>
+        <div class="rating-row faded">
+          <div class="rating-letter" style="background:#A8CE37">C</div>
+          <div class="rating-bar" style="background:#A8CE37; width:65%"></div>
+          <div class="rating-note"></div>
+        </div>
+        <div class="rating-row faded">
+          <div class="rating-letter" style="background:#F3E40D">D</div>
+          <div class="rating-bar" style="background:#F3E40D; width:50%"></div>
+          <div class="rating-note"></div>
+        </div>
+        <div class="rating-row highlight">
+          <div class="rating-letter" style="background:#EAA116; color:white">E</div>
+          <div class="rating-bar" style="background:#EAA116; width:38%"></div>
+          <div class="rating-note" style="color:#D4830A; font-weight:500">← Mínimo 2030</div>
+        </div>
+        <div class="rating-row faded">
+          <div class="rating-letter" style="background:#E7521C">F</div>
+          <div class="rating-bar" style="background:#E7521C; width:22%"></div>
+          <div class="rating-note" style="color:#c0392b">No vendible ni alquilable</div>
+        </div>
+        <div class="rating-row faded">
+          <div class="rating-letter" style="background:#C9181E">G</div>
+          <div class="rating-bar" style="background:#C9181E; width:10%"></div>
+          <div class="rating-note" style="color:#c0392b">No vendible ni alquilable</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- URGENCY BAR -->
+<div class="urgency-bar" role="banner">
+  <p>⚠️ <strong>80% de las viviendas en España</strong> no cumplen el mínimo energético exigido desde 2030</p>
+  <p>🏚️ Sin letra E: <strong>no podrás vender ni alquilar tu piso</strong></p>
+  <p>💶 Multas de hasta <strong>60.000 €</strong> por incumplimiento</p>
+</div>
+
+<!-- EL PROBLEMA -->
+<section class="problema" id="problema" aria-labelledby="problema-h2">
+  <div class="section-label">El problema</div>
+  <h2 id="problema-h2">La normativa cambia. La mayoría no está preparada.</h2>
+  <p class="section-intro">La Directiva Europea 2024/1275 obliga a todos los Estados miembros. España está en proceso de transposición. El reloj corre.</p>
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-num">80%</div>
+      <div class="stat-desc">de las viviendas en España tienen calificación F o G según el IDAE. No podrán venderse ni alquilarse desde 2030 sin rehabilitación.</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">2030</div>
+      <div class="stat-desc">Fecha límite para tener mínimo letra E. En 2033 subirá a D. El tiempo para actuar con calma es ahora, no el último año.</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">60k€</div>
+      <div class="stat-desc">Multa máxima prevista por incumplimiento. Además, el inmueble quedará bloqueado legalmente para cualquier transmisión.</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">+15%</div>
+      <div class="stat-desc">de incremento de valor medio estimado en viviendas que alcanzan etiqueta C o superior, según estudios de mercado europeos.</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" aria-labelledby="servicios-h2">
+  <div class="section-label">Nuestros servicios</div>
+  <h2 id="servicios-h2">Todo lo que necesitas para llegar a la letra E</h2>
+  <p class="section-intro">Sin rodeos: te decimos exactamente qué hay que hacer en tu vivienda, cuánto cuesta y cómo financiarlo.</p>
+  <div class="servicios-grid">
+    <article class="servicio-card">
+      <div class="servicio-num">01</div>
+      <div class="servicio-icon">🔍</div>
+      <h3>Auditoría Energética</h3>
+      <p>Visita técnica al inmueble, análisis de consumos, certificado energético actual y hoja de ruta personalizada con las mejoras necesarias para alcanzar la letra E o superior.</p>
+      <span class="servicio-tag">Para propietarios, comunidades y agencias</span>
+    </article>
+    <article class="servicio-card">
+      <div class="servicio-num">02</div>
+      <div class="servicio-icon">📋</div>
+      <h3>Asesoramiento Estratégico</h3>
+      <p>Analizamos tu caso concreto: qué reformas son necesarias, cuáles son prioritarias, qué ayudas públicas puedes solicitar (Next Generation, BONO, autonómicas) y cómo maximizar el retorno.</p>
+      <span class="servicio-tag">Consultoría personalizada</span>
+    </article>
+    <article class="servicio-card">
+      <div class="servicio-num">03</div>
+      <div class="servicio-icon">🏗️</div>
+      <h3>Gestión de Obras</h3>
+      <p>Coordinamos y supervisamos las obras de mejora: aislamiento térmico, ventanas, sistemas de calefacción/refrigeración eficientes, energía solar. Entregamos llave en mano con garantía de resultado.</p>
+      <span class="servicio-tag">Resultado garantizado</span>
+    </article>
+    <article class="servicio-card">
+      <div class="servicio-num">04</div>
+      <div class="servicio-icon">🏢</div>
+      <h3>Servicios para Agencias</h3>
+      <p>Ofrecemos informes energéticos para inmuebles en cartera, asesoramiento en la valoración de activos según normativa 2030, y formación para equipos comerciales.</p>
+      <span class="servicio-tag">Para profesionales inmobiliarios</span>
+    </article>
+    <article class="servicio-card">
+      <div class="servicio-num">05</div>
+      <div class="servicio-icon">🏘️</div>
+      <h3>Comunidades de Propietarios</h3>
+      <p>Gestión integral del proceso para comunidades: desde la auditoría del edificio completo hasta la presentación en junta, tramitación de ayudas y coordinación con la constructora.</p>
+      <span class="servicio-tag">Proceso 100% gestionado</span>
+    </article>
+    <article class="servicio-card">
+      <div class="servicio-num">06</div>
+      <div class="servicio-icon">💶</div>
+      <h3>Tramitación de Ayudas</h3>
+      <p>España movilizará miles de millones en subvenciones para rehabilitación energética. Te ayudamos a identificar y tramitar todas las ayudas disponibles para tu caso.</p>
+      <span class="servicio-tag">Maximiza la financiación pública</span>
+    </article>
+  </div>
+</section>
+
+<!-- PARA QUIÉN -->
+<section class="para-quien" id="para-quien" aria-labelledby="para-quien-h2">
+  <div class="section-label">¿Para quién?</div>
+  <h2 id="para-quien-h2">Trabajamos con propietarios, agencias y comunidades</h2>
+  <p class="section-intro">El problema te afecta tengas un piso o un edificio entero.</p>
+  <div class="perfiles-grid">
+    <div class="perfil-card">
+      <div class="perfil-emoji">🏠</div>
+      <h3>Propietarios particulares</h3>
+      <p>Tienes un piso con letra F o G y quieres venderlo o alquilarlo antes o después de 2030. Necesitas saber exactamente qué hacer, cuánto gastarte y qué ayudas tienes disponibles.</p>
+    </div>
+    <div class="perfil-card">
+      <div class="perfil-emoji">🏢</div>
+      <h3>Agencias inmobiliarias</h3>
+      <p>Tienes inmuebles en cartera que no van a poder venderse si no se actúa. Necesitas asesorar a tus clientes correctamente y diferenciar tu servicio con conocimiento real de la normativa.</p>
+    </div>
+    <div class="perfil-card">
+      <div class="perfil-emoji">🏘️</div>
+      <h3>Comunidades de propietarios</h3>
+      <p>Vuestro edificio tiene baja calificación energética. Necesitáis un diagnóstico, saber qué obras son necesarias, cuánto costará por vecino y cómo financiarlo colectivamente.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section id="proceso" aria-labelledby="proceso-h2">
+  <div class="section-label">Cómo trabajamos</div>
+  <h2 id="proceso-h2">Cuatro pasos, sin complicaciones</h2>
+  <p class="section-intro">Del diagnóstico al certificado final, lo gestionamos todo.</p>
+  <div class="proceso-steps">
+    <div class="step">
+      <div class="step-arrow">→</div>
+      <div class="step-num">01</div>
+      <h3>Consulta gratuita</h3>
+      <p>Analizamos tu situación sin compromiso. Te decimos si tu vivienda necesita intervención urgente y qué opciones tienes.</p>
+    </div>
+    <div class="step">
+      <div class="step-arrow">→</div>
+      <div class="step-num">02</div>
+      <h3>Auditoría técnica</h3>
+      <p>Visita presencial al inmueble. Certificado energético actual y plan de mejora detallado con coste estimado.</p>
+    </div>
+    <div class="step">
+      <div class="step-arrow">→</div>
+      <div class="step-num">03</div>
+      <h3>Plan & financiación</h3>
+      <p>Te decimos qué obras son más urgentes, cuánto costarán, qué ayudas puedes pedir y cuánto dinero te ahorrarás cada año en la factura.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">04</div>
+      <h3>Ejecución y certificado</h3>
+      <p>Coordinamos las obras y entregamos el nuevo certificado energético con la calificación obtenida.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TARIFAS -->
+<section id="tarifas" aria-labelledby="tarifas-h2" style="background:#EEEAE0;">
+  <div class="section-label">Tarifas</div>
+  <h2 id="tarifas-h2">Precios claros, sin letra pequeña</h2>
+  <p class="section-intro">El precio depende de la superficie de tu inmueble. Sin sorpresas.</p>
+  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap:1.5rem; max-width:900px;">
+
+    <!-- OPCIÓN 1 -->
+    <div style="background:white; border:1px solid var(--border); border-radius:4px; padding:2.5rem; position:relative; box-shadow:0 4px 24px rgba(0,0,0,0.05);">
+      <div style="font-size:0.72rem; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:var(--sage); margin-bottom:0.6rem;">Opción 1</div>
+      <h3 style="font-family:'DM Serif Display',serif; font-size:1.4rem; line-height:1.2; margin-bottom:1rem;">Certificado de Eficiencia Energética del Estado Actual</h3>
+      <div style="display:flex; align-items:baseline; gap:0.4rem; margin-bottom:0.3rem;">
+        <span style="font-family:'DM Serif Display',serif; font-size:3rem; color:var(--sage); line-height:1;">1€</span>
+        <span style="font-size:0.9rem; color:var(--stone);">/m²</span>
+      </div>
+      <p style="font-size:0.82rem; color:var(--amber); font-weight:500; margin-bottom:1.2rem;">Mínimo 100€</p>
+      <ul style="list-style:none; display:flex; flex-direction:column; gap:0.6rem; margin-bottom:1.5rem;">
+        <li style="font-size:0.88rem; color:var(--stone); display:flex; gap:0.6rem;"><span style="color:var(--sage);">✓</span> Visita técnica al inmueble</li>
+        <li style="font-size:0.88rem; color:var(--stone); display:flex; gap:0.6rem;"><span style="color:var(--sage);">✓</span> Certificado energético oficial registrado</li>
+        <li style="font-size:0.88rem; color:var(--stone); display:flex; gap:0.6rem;"><span style="color:var(--sage);">✓</span> Etiqueta energética con calificación actual</li>
+        <li style="font-size:0.88rem; color:var(--stone); display:flex; gap:0.6rem;"><span style="color:var(--stone); opacity:0.4;">–</span> <span style="opacity:0.5;">Superficies &gt;200m²: consultar precio</span></li>
+      </ul>
+      <a href="#contacto" style="display:inline-block; background:var(--sage); color:white; padding:0.8rem 1.6rem; border-radius:2px; text-decoration:none; font-size:0.88rem; font-weight:500; transition:background 0.2s;" onmouseover="this.style.background='#4a6a4d'" onmouseout="this.style.background='var(--sage)'">Solicitar →</a>
+    </div>
+
+    <!-- OPCIÓN 2 -->
+    <div style="background:var(--sage); border:1px solid var(--sage); border-radius:4px; padding:2.5rem; position:relative; box-shadow:0 8px 40px rgba(92,122,95,0.3);">
+      <div style="position:absolute; top:-1px; right:1.5rem; background:var(--amber); color:white; font-size:0.68rem; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; padding:0.3rem 0.8rem; border-radius:0 0 3px 3px;">Más completo</div>
+      <div style="font-size:0.72rem; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.6); margin-bottom:0.6rem;">Opción 2</div>
+      <h3 style="font-family:'DM Serif Display',serif; font-size:1.4rem; line-height:1.2; margin-bottom:1rem; color:white;">Opción 1 + Asesoramiento para conseguir la Letra E</h3>
+      <div style="display:flex; align-items:baseline; gap:0.4rem; margin-bottom:0.3rem;">
+        <span style="font-family:'DM Serif Display',serif; font-size:3rem; color:white; line-height:1;">2€</span>
+        <span style="font-size:0.9rem; color:rgba(255,255,255,0.7);">/m²</span>
+      </div>
+      <p style="font-size:0.82rem; color:rgba(255,255,255,0.7); font-weight:500; margin-bottom:1.2rem;">Mínimo 100€</p>
+      <ul style="list-style:none; display:flex; flex-direction:column; gap:0.6rem; margin-bottom:1.5rem;">
+        <li style="font-size:0.88rem; color:rgba(255,255,255,0.85); display:flex; gap:0.6rem;"><span style="color:rgba(255,255,255,0.9);">✓</span> Todo lo incluido en la Opción 1</li>
+        <li style="font-size:0.88rem; color:rgba(255,255,255,0.85); display:flex; gap:0.6rem;"><span style="color:rgba(255,255,255,0.9);">✓</span> Asesoramiento personalizado para alcanzar letra E</li>
+        <li style="font-size:0.88rem; color:rgba(255,255,255,0.85); display:flex; gap:0.6rem;"><span style="color:rgba(255,255,255,0.9);">✓</span> Plan de mejoras con coste estimado</li>
+        <li style="font-size:0.88rem; color:rgba(255,255,255,0.85); display:flex; gap:0.6rem;"><span style="color:rgba(255,255,255,0.9);">✓</span> Nuevo certificado tras realizar las modificaciones</li>
+        <li style="font-size:0.88rem; color:rgba(255,255,255,0.7); display:flex; gap:0.6rem;"><span style="opacity:0.5;">–</span> <span style="opacity:0.6;">Superficies &gt;200m²: consultar precio</span></li>
+      </ul>
+      <a href="#contacto" style="display:inline-block; background:white; color:var(--sage); padding:0.8rem 1.6rem; border-radius:2px; text-decoration:none; font-size:0.88rem; font-weight:500; transition:background 0.2s;" onmouseover="this.style.background='var(--cream)'" onmouseout="this.style.background='white'">Solicitar →</a>
+    </div>
+
+  </div>
+  <p style="margin-top:1.5rem; font-size:0.8rem; color:var(--stone);">* Los precios no incluyen IGIC. Para superficies superiores a 200m² o inmuebles especiales, contacta con nosotros para recibir un presupuesto personalizado. La superficie se tomará de los datos del Catastro.</p>
+</section>
+
+<!-- FAQ (SEO) -->
+<section class="faq" id="faq" aria-labelledby="faq-h2">
+  <div class="section-label">Preguntas frecuentes</div>
+  <h2 id="faq-h2">Lo que más nos preguntan</h2>
+  <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
+
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <div class="faq-q" tabindex="0" role="button" aria-expanded="false" itemprop="name">¿Desde cuándo es obligatorio tener letra E para vender un piso en España?</div>
+      <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <div itemprop="text">Según la Directiva Europea 2024/1275, la fecha límite es el 1 de enero de 2030. A partir de esa fecha, no se podrá formalizar legalmente la venta ni el alquiler de una vivienda con calificación energética inferior a E. España está actualmente en proceso de transposición de esta directiva a su ordenamiento jurídico.</div>
+      </div>
+    </div>
+
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <div class="faq-q" tabindex="0" role="button" aria-expanded="false" itemprop="name">¿Qué pasa si mi piso tiene letra F o G y no hago nada?</div>
+      <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <div itemprop="text">Desde el 1 de enero de 2030, no podrás vender ni alquilar legalmente tu vivienda si tiene calificación F o G. Las multas previstas por incumplimiento pueden llegar a 60.000 euros, y el inmueble quedará bloqueado para cualquier tipo de transmisión hasta que se subsane la situación.</div>
+      </div>
+    </div>
+
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <div class="faq-q" tabindex="0" role="button" aria-expanded="false" itemprop="name">¿Cuánto cuesta mejorar de letra G a letra E?</div>
+      <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <div itemprop="text">Depende del estado actual del inmueble, su superficie y las medidas necesarias. En una vivienda media en España, las actuaciones más habituales (aislamiento de fachada, sustitución de ventanas, mejora del sistema de calefacción) rondan entre 8.000 y 25.000 euros. Sin embargo, con las ayudas públicas disponibles — fondos Next Generation, programas autonómicos y municipales — el coste neto para el propietario puede reducirse significativamente. Por eso es clave hacer primero una auditoría: muchas veces basta con medidas puntuales de menor coste.</div>
+      </div>
+    </div>
+
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <div class="faq-q" tabindex="0" role="button" aria-expanded="false" itemprop="name">¿Qué ayudas existen para mejorar la eficiencia energética de mi vivienda?</div>
+      <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <div itemprop="text">Existen varias líneas de financiación: los fondos europeos Next Generation EU canalizados a través del Plan de Recuperación, programas autonómicos de rehabilitación, deducciones fiscales en el IRPF por mejoras energéticas, y el Plan Nacional de Renovación de Edificios (PNRE) que el Gobierno español presentó a la Comisión Europea en diciembre de 2025. La cantidad que puedes obtener varía según tu comunidad autónoma y el tipo de actuación. Nosotros identificamos y tramitamos todas las ayudas aplicables a tu caso.</div>
+      </div>
+    </div>
+
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <div class="faq-q" tabindex="0" role="button" aria-expanded="false" itemprop="name">¿Afecta la normativa también al alquiler?</div>
+      <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <div itemprop="text">Sí. La directiva afecta tanto a la venta como al alquiler. Ninguna transacción, ya sea compraventa o arrendamiento, podrá formalizarse legalmente con un inmueble que tenga calificación energética inferior a E a partir del 1 de enero de 2030.</div>
+      </div>
+    </div>
+
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <div class="faq-q" tabindex="0" role="button" aria-expanded="false" itemprop="name">¿Cuánto tiempo lleva el proceso de mejora energética?</div>
+      <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <div itemprop="text">Un proceso completo — desde la auditoría inicial hasta la obtención del nuevo certificado — suele llevar entre 3 y 8 meses, dependiendo de la complejidad de las obras y de los trámites administrativos para solicitar ayudas. Quien espere al último año tendrá menos opciones de financiación y los precios de obra serán más altos por la demanda. Actuar ahora es significativamente más barato y menos estresante.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contacto" id="contacto" aria-labelledby="contacto-h2">
+  <div class="section-label">Contacto</div>
+  <h2 id="contacto-h2">Consulta gratuita, sin compromiso</h2>
+  <p class="section-intro">Cuéntanos tu situación y te decimos exactamente qué necesitas hacer.</p>
+  <div class="contact-grid">
+    <form class="contact-form" onsubmit="handleSubmit(event)" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="tipo">¿Eres…?</label>
+        <select id="tipo" name="tipo">
+          <option value="">Selecciona tu perfil</option>
+          <option>Propietario particular</option>
+          <option>Agencia inmobiliaria</option>
+          <option>Comunidad de propietarios</option>
+          <option>Otro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Cuéntanos tu situación</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Letra energética actual, localización del inmueble, urgencia..."></textarea>
+      </div>
+      <div class="form-group">
+        <div class="privacy-notice">
+          <p>Los datos facilitados serán tratados por <strong>ENRIQUE JOSE RODRIGUEZ GRANADOS</strong>, con NIF <strong>54049815E</strong>, con la finalidad de atender tu consulta y enviarte información sobre nuestros servicios. La base legal es tu consentimiento. Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, portabilidad y limitación escribiendo a <strong>info@letrae.es</strong>. No cedemos tus datos a terceros salvo obligación legal.</p>
+        </div>
+        <label class="checkbox-label">
+          <input type="checkbox" id="rgpd" name="rgpd" required />
+          <span>He leído y acepto la <a href="#politica-privacidad" style="color:rgba(255,255,255,0.9);text-decoration:underline">Política de Privacidad</a> y consiento el tratamiento de mis datos para atender mi consulta. *</span>
+        </label>
+      </div>
+      <button type="submit" class="btn-submit" id="submit-btn">Enviar consulta →</button>
+      <p id="form-msg" style="font-size:0.85rem;color:rgba(255,255,255,0.8);display:none"></p>
+    </form>
+    <div class="contact-info">
+      <div class="contact-info-item">
+        <div class="contact-info-icon">📞</div>
+        <div class="contact-info-text">
+          <strong>689 142 038 &nbsp;·&nbsp; 628 378 603</strong>
+          <span>Lunes a viernes, 9h–18h</span>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-info-icon">✉️</div>
+        <div class="contact-info-text">
+          <strong>info@letrae.es</strong>
+          <span>Respuesta en menos de 24h</span>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-info-icon">📍</div>
+        <div class="contact-info-text">
+          <strong>Servicio en Canarias</strong>
+          <span>Operamos en todas las islas del archipiélago</span>
+        </div>
+      </div>
+      <div class="promise-box">
+        <p>✔ Primera consulta completamente gratuita<br>
+        ✔ Sin compromiso de contratar<br>
+        ✔ Te decimos la verdad aunque no sea lo que quieres oír<br>
+        ✔ Presupuesto detallado antes de cualquier obra</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POLÍTICA DE PRIVACIDAD -->
+<section id="politica-privacidad" style="background:#F5F0E8; padding: 5rem 5vw;">
+  <div style="max-width:760px;">
+    <div class="section-label">Legal</div>
+    <h2 style="margin-bottom:2rem;">Política de Privacidad y Aviso Legal</h2>
+
+    <h3 style="font-family:'DM Serif Display',serif; font-size:1.2rem; margin:1.5rem 0 0.5rem;">1. Responsable del tratamiento</h3>
+    <p style="font-size:0.88rem; color:#8A8578; line-height:1.7;">
+      <strong>Titular:</strong> ENRIQUE JOSE RODRIGUEZ GRANADOS<br>
+      <strong>NIF/CIF:</strong> 54049815E<br>
+      <strong>Email de contacto:</strong> info@letrae.es<br>
+      <strong>Web:</strong> https://www.letrae.es
+    </p>
+
+    <h3 style="font-family:'DM Serif Display',serif; font-size:1.2rem; margin:1.5rem 0 0.5rem;">2. Finalidad del tratamiento</h3>
+    <p style="font-size:0.88rem; color:#8A8578; line-height:1.7;">
+      Los datos personales facilitados a través del formulario de contacto se tratarán con las siguientes finalidades:<br>
+      — Atender y gestionar tu consulta o solicitud de información.<br>
+      — Enviarte información sobre nuestros servicios de asesoramiento energético, si nos das tu consentimiento.<br>
+      — Cumplir con las obligaciones legales que nos sean aplicables.
+    </p>
+
+    <h3 style="font-family:'DM Serif Display',serif; font-size:1.2rem; margin:1.5rem 0 0.5rem;">3. Base legal</h3>
+    <p style="font-size:0.88rem; color:#8A8578; line-height:1.7;">
+      La base legal para el tratamiento de tus datos es el consentimiento expreso que nos otorgas al marcar la casilla de aceptación del formulario (art. 6.1.a del RGPD). Puedes retirar tu consentimiento en cualquier momento sin que ello afecte a la licitud del tratamiento previo a su retirada.
+    </p>
+
+    <h3 style="font-family:'DM Serif Display',serif; font-size:1.2rem; margin:1.5rem 0 0.5rem;">4. Conservación de los datos</h3>
+    <p style="font-size:0.88rem; color:#8A8578; line-height:1.7;">
+      Los datos se conservarán durante el tiempo necesario para atender tu consulta y, posteriormente, durante los plazos legalmente exigidos para atender posibles responsabilidades. Una vez finalizada la relación, los datos serán suprimidos o anonimizados.
+    </p>
+
+    <h3 style="font-family:'DM Serif Display',serif; font-size:1.2rem; margin:1.5rem 0 0.5rem;">5. Destinatarios</h3>
+    <p style="font-size:0.88rem; color:#8A8578; line-height:1.7;">
+      No cedemos tus datos a terceros, salvo obligación legal o cuando sea estrictamente necesario para la prestación del servicio contratado (por ejemplo, empresas colaboradoras en la ejecución de obras, con las garantías contractuales adecuadas). No realizamos transferencias internacionales de datos.
+    </p>
+
+    <h3 style="font-family:'DM Serif Display',serif; font-size:1.2rem; margin:1.5rem 0 0.5rem;">6. Tus derechos</h3>
+    <p style="font-size:0.88rem; color:#8A8578; line-height:1.7;">
+      Puedes ejercer en cualquier momento los siguientes derechos escribiendo a <strong>info@letrae.es</strong>, indicando el derecho que deseas ejercer y adjuntando copia de tu DNI:<br>
+      — <strong>Acceso:</strong> conocer qué datos tuyos tratamos.<br>
+      — <strong>Rectificación:</strong> corregir datos inexactos o incompletos.<br>
+      — <strong>Supresión:</strong> solicitar la eliminación de tus datos.<br>
+      — <strong>Oposición:</strong> oponerte al tratamiento de tus datos.<br>
+      — <strong>Limitación:</strong> solicitar la restricción del tratamiento.<br>
+      — <strong>Portabilidad:</strong> recibir tus datos en formato estructurado.<br><br>
+      También tienes derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es) si consideras que el tratamiento no es conforme a la normativa.
+    </p>
+
+    <h3 style="font-family:'DM Serif Display',serif; font-size:1.2rem; margin:1.5rem 0 0.5rem;">7. Aviso Legal (LSSI)</h3>
+    <p style="font-size:0.88rem; color:#8A8578; line-height:1.7;">
+      En cumplimiento del artículo 10 de la Ley 34/2002, de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSI-CE), se informa que el titular de este sitio web es <strong>ENRIQUE JOSE RODRIGUEZ GRANADOS</strong>, con NIF <strong>54049815E</strong>. Correo electrónico de contacto: <strong>info@letrae.es</strong>.<br><br>
+      Los contenidos de esta web tienen finalidad meramente informativa. LetraE no se responsabiliza del uso que el usuario pueda hacer de la información publicada. Nos reservamos el derecho a modificar los contenidos sin previo aviso.
+    </p>
+
+    <h3 style="font-family:'DM Serif Display',serif; font-size:1.2rem; margin:1.5rem 0 0.5rem;">8. Cookies</h3>
+    <p style="font-size:0.88rem; color:#8A8578; line-height:1.7;">
+      Esta web no utiliza cookies propias ni de terceros en su configuración actual. Si en el futuro se incorporaran herramientas de análisis u otras que impliquen el uso de cookies, se actualizará esta política y se solicitará el consentimiento correspondiente.
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="/" class="logo">Letra<span style="color:var(--sage-light)">E</span></a>
+  <p>Asesoramiento en eficiencia energética · Directiva UE 2024/1275 · España</p>
+  <p>© 2025 LetraE · <a href="#politica-privacidad" style="color:inherit">Aviso legal y Privacidad</a></p>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+
+  // Countdown to Jan 1, 2030
+  function updateCountdown() {
+    const target = new Date('2030-01-01T00:00:00');
+    const now = new Date();
+    const diff = target - now;
+    if (diff <= 0) {
+      document.getElementById('cd-days').textContent = '0';
+      document.getElementById('cd-hours').textContent = '0';
+      document.getElementById('cd-mins').textContent = '0';
+      return;
+    }
+    const days = Math.floor(diff / (1000*60*60*24));
+    const hours = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+    const mins = Math.floor((diff % (1000*60*60)) / (1000*60));
+    const secs = Math.floor((diff % (1000*60)) / 1000);
+    document.getElementById('cd-days').textContent = days.toLocaleString('es-ES');
+    document.getElementById('cd-hours').textContent = String(hours).padStart(2,'0');
+    document.getElementById('cd-mins').textContent = String(mins).padStart(2,'0');
+    document.getElementById('cd-secs').textContent = String(secs).padStart(2,'0');
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const answer = q.nextElementSibling;
+      const isOpen = q.classList.contains('open');
+      document.querySelectorAll('.faq-q').forEach(x => { x.classList.remove('open'); x.setAttribute('aria-expanded','false'); });
+      document.querySelectorAll('.faq-a').forEach(x => x.classList.remove('open'));
+      if (!isOpen) { q.classList.add('open'); q.setAttribute('aria-expanded','true'); answer.classList.add('open'); }
+    });
+    q.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); q.click(); } });
+  });
+
+  // Form
+  function handleSubmit(e) {
+    e.preventDefault();
+    const rgpd = document.getElementById('rgpd');
+    const btn = document.getElementById('submit-btn');
+    const msg = document.getElementById('form-msg');
+    if (!rgpd.checked) {
+      msg.textContent = 'Debes aceptar la Política de Privacidad para continuar.';
+      msg.style.color = 'rgba(255,200,100,0.95)';
+      msg.style.display = 'block';
+      return;
+    }
+    msg.style.display = 'none';
+    btn.textContent = 'Enviando...'; btn.disabled = true;
+    setTimeout(() => {
+      btn.textContent = '✓ Mensaje enviado';
+      msg.textContent = 'Nos pondremos en contacto contigo en menos de 24 horas.';
+      msg.style.color = 'rgba(255,255,255,0.8)';
+      msg.style.display = 'block';
+    }, 1000);
+  }
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.style.opacity = '1'; e.target.style.transform = 'translateY(0)'; } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.servicio-card, .perfil-card, .stat-card, .step').forEach(el => {
+    el.style.opacity = '0'; el.style.transform = 'translateY(16px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    observer.observe(el);
+  });
+
+  }); // end DOMContentLoaded
+</script>
+</body>
+</html>
