@@ -892,53 +892,83 @@
 </footer>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-
-  // Countdown to Jan 1, 2030
+(function() {
   function updateCountdown() {
-    const target = new Date('2030-01-01T00:00:00');
-    const now = new Date();
-    const diff = target - now;
+    var target = new Date('2030-01-01T00:00:00').getTime();
+    var now = new Date().getTime();
+    var diff = target - now;
     if (diff <= 0) {
       document.getElementById('cd-days').textContent = '0';
-      document.getElementById('cd-hours').textContent = '0';
-      document.getElementById('cd-mins').textContent = '0';
+      document.getElementById('cd-hours').textContent = '00';
+      document.getElementById('cd-mins').textContent = '00';
+      document.getElementById('cd-secs').textContent = '00';
       return;
     }
-    const days = Math.floor(diff / (1000*60*60*24));
-    const hours = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
-    const mins = Math.floor((diff % (1000*60*60)) / (1000*60));
-    const secs = Math.floor((diff % (1000*60)) / 1000);
+    var days = Math.floor(diff / (1000*60*60*24));
+    var hours = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+    var mins = Math.floor((diff % (1000*60*60)) / (1000*60));
+    var secs = Math.floor((diff % (1000*60)) / 1000);
     document.getElementById('cd-days').textContent = days.toLocaleString('es-ES');
-    document.getElementById('cd-hours').textContent = String(hours).padStart(2,'0');
-    document.getElementById('cd-mins').textContent = String(mins).padStart(2,'0');
-    document.getElementById('cd-secs').textContent = String(secs).padStart(2,'0');
+    document.getElementById('cd-hours').textContent = (hours < 10 ? '0' : '') + hours;
+    document.getElementById('cd-mins').textContent = (mins < 10 ? '0' : '') + mins;
+    document.getElementById('cd-secs').textContent = (secs < 10 ? '0' : '') + secs;
   }
-  updateCountdown();
-  setInterval(updateCountdown, 1000);
 
-  // FAQ accordion
-  document.querySelectorAll('.faq-q').forEach(q => {
-    q.addEventListener('click', () => {
-      const answer = q.nextElementSibling;
-      const isOpen = q.classList.contains('open');
-      document.querySelectorAll('.faq-q').forEach(x => { x.classList.remove('open'); x.setAttribute('aria-expanded','false'); });
-      document.querySelectorAll('.faq-a').forEach(x => x.classList.remove('open'));
-      if (!isOpen) { q.classList.add('open'); q.setAttribute('aria-expanded','true'); answer.classList.add('open'); }
+  window.onload = function() {
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // FAQ accordion
+    var faqs = document.querySelectorAll('.faq-q');
+    faqs.forEach(function(q) {
+      q.addEventListener('click', function() {
+        var answer = q.nextElementSibling;
+        var isOpen = q.classList.contains('open');
+        document.querySelectorAll('.faq-q').forEach(function(x) {
+          x.classList.remove('open');
+          x.setAttribute('aria-expanded','false');
+        });
+        document.querySelectorAll('.faq-a').forEach(function(x) {
+          x.classList.remove('open');
+        });
+        if (!isOpen) {
+          q.classList.add('open');
+          q.setAttribute('aria-expanded','true');
+          answer.classList.add('open');
+        }
+      });
     });
-    q.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); q.click(); } });
-  });
 
-  // Validación RGPD antes de enviar a Formspree
-  document.querySelector('.contact-form').addEventListener('submit', function(e) {
-    const rgpd = document.getElementById('rgpd');
-    if (!rgpd.checked) {
-      e.preventDefault();
-      alert('Debes aceptar la Política de Privacidad para continuar.');
+    // Validacion RGPD
+    var form = document.querySelector('.contact-form');
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        var rgpd = document.getElementById('rgpd');
+        if (!rgpd.checked) {
+          e.preventDefault();
+          alert('Debes aceptar la Politica de Privacidad para continuar.');
+        }
+      });
     }
-  });
-    msg.style.display = 'none';
-    btn.textContent = 'Enviando...'; btn.disabled = true;
-    setTimeout(() => {
-      btn.textContent = '✓ Mensaje enviado';
-      msg.textContent = 'Nos pondremos en contac
+
+    // Scroll reveal
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.servicio-card, .perfil-card, .stat-card, .step').forEach(function(el) {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(16px)';
+      el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      observer.observe(el);
+    });
+  };
+})();
+</script>
+</body>
+</html>
